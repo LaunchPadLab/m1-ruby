@@ -1,0 +1,21 @@
+# Rmagick 2.13.2
+
+## 1. Install ImageMagick version 6
+```
+brew install imagemagick@6
+
+# Point brew at old ImageMagick
+brew unlink imagemagick
+brew link imagemagick@6
+
+gem install rmagick -v '2.13.2' --source 'http://rubygems.org/'
+
+# Return to normal
+brew unlink imagemagick@6
+brew link imagemagick
+```
+
+Solution originally sourced from here: https://stackoverflow.com/questions/24592310/cant-install-rmagick-2-13-2
+
+#### Verified by:
+- [Lanny Bose](https://github.com/LannyBose) on an M1 MacBook Air on MacOS 12.1
